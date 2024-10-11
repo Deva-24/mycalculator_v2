@@ -5,7 +5,7 @@ def main():
 
     while True:
         print("\nOptions:")
-        print("1: Add")
+        print("1: Addition")
         print("2: Subtract")
         print("3: Multiply")
         print("4: Divide")
@@ -14,10 +14,10 @@ def main():
         print("7: View History")
         print("8: Quit")
         
-        operation = input("Choose an operation (1-8): ").strip()
+        operation = input("Choose an operation  to perform (1-8): ").strip()
 
         if operation == "8":
-            print("Exiting the calculator.")
+            print("Exiting")
             break
 
         if operation == "7":
@@ -30,8 +30,8 @@ def main():
 
         if operation in {"1", "2", "3", "4", "5", "6"}:
             try:
-                a = float(input("Enter first number: "))
-                b = float(input("Enter second number: "))
+                a = float(input("Enter 1st Number: "))
+                b = float(input("Enter 2nd Number: "))
                 
                 if operation == "1":
                     result = calc.perform_operation("add", a, b)
