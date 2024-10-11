@@ -4,20 +4,21 @@ def main():
     calc = Calculator()
 
     while True:
-        print("\nOptions:")
-        print("1: Addition")
-        print("2: Subtract")
-        print("3: Multiply")
-        print("4: Divide")
-        print("5: Modulus")
-        print("6: Power")
-        print("7: View History")
-        print("8: Quit")
+        print("\n *** Calculator_V2 ***")
+        print("\n Choose an operation to perform (1-8):")
+        print(" 1: Addition")
+        print(" 2: Subtract")
+        print(" 3: Multiply")
+        print(" 4: Divide")
+        print(" 5: Modulus")
+        print(" 6: Power")
+        print(" 7: View History")
+        print(" 8: Quit")
         
-        operation = input("Choose an operation  to perform (1-8): ").strip()
+        operation = input("\n Enter the number(1-8) to perform : \n ").strip()
 
         if operation == "8":
-            print("Exiting")
+            print("Bye Bye")
             break
 
         if operation == "7":
@@ -52,7 +53,7 @@ def main():
                 print(f"Error: {e}")
 
         else:
-            print("Invalid operation. Try again.")
+            print("Invalid operation. Enter proper value.")
 
 if __name__ == "__main__":
     main()
