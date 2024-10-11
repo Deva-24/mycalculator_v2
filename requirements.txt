@@ -1,0 +1,3 @@
+# Required for testing
+pytest==7.3.1    # Testing framework for Python
+pylint==2.17.5    # Code analysis tool to ensure code quality
